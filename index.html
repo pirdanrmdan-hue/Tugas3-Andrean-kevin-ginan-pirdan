@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya - [Nama Anda]</title>
+    <!-- Memuat Tailwind CSS dari CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Memuat Lucide Icons untuk ikon yang bersih -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Konfigurasi Tailwind untuk font Inter -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#4F46E5', // Biru Indigo
+                        'secondary': '#1F2937', // Abu-abu Gelap
+                        'accent': '#FDE047', // Kuning Cerah
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Menggunakan Font Inter */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-secondary min-h-screen">
+
+    <!-- Kontainer Utama -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Navigasi Sederhana -->
+        <header class="flex justify-between items-center py-6">
+            <div class="text-2xl font-extrabold text-primary">
+                [Nama Anda]
+            </div>
+            <nav class="hidden md:flex space-x-6 text-lg">
+                <a href="#tentang" class="hover:text-primary transition duration-150">Tentang</a>
+                <a href="#karya" class="hover:text-primary transition duration-150">Karya</a>
+                <a href="#kontak" class="hover:text-primary transition duration-150">Kontak</a>
+            </nav>
+        </header>
+
+        <!-- Bagian 1: HERO SECTION -->
+        <section id="hero" class="pt-16 pb-24 md:pt-24 md:pb-32 text-center">
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-10 md:space-y-0 md:space-x-12">
+                <!-- Foto/Ilustrasi Profil -->
+                <div class="flex-shrink-0 w-48 h-48 sm:w-64 sm:h-64">
+                    <!-- Placeholder Lingkaran untuk Foto Profil -->
+                    <img src="https://placehold.co/256x256/4F46E5/ffffff?text=FOTO" alt="Foto Profil" class="rounded-full object-cover w-full h-full shadow-xl ring-4 ring-primary ring-opacity-50" onerror="this.onerror=null;this.src='https://placehold.co/256x256/4F46E5/ffffff?text=FOTO';">
+                </div>
+
+                <!-- Teks Hero -->
+                <div class="md:text-left max-w-xl">
+                    <p class="text-xl sm:text-2xl font-semibold text-gray-600 mb-2">Halo, saya [Nama Anda]!</p>
+                    <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight tracking-tight mb-6 text-secondary">
+                        <span class="text-primary">[Spesialisasi Anda]</span> yang Mengubah Ide Menjadi Realita.
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-600 mb-8">
+                        Saya fokus pada desain UI/UX yang intuitif dan pengembangan web yang efisien. Mari ciptakan produk digital yang berdampak!
+                    </p>
+                    
+                    <!-- CTA Utama -->
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#karya" class="bg-primary text-white px-8 py-3 rounded-xl font-bold text-lg shadow-lg hover:bg-indigo-600 transition duration-300 transform hover:scale-[1.02]">
+                            Lihat Portofolio Saya
+                        </a>
+                        <a href="#kontak" class="bg-white text-primary border-2 border-primary px-8 py-3 rounded-xl font-bold text-lg shadow-md hover:bg-gray-100 transition duration-300">
+                            Hubungi
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider Beraksen -->
+        <div class="w-full h-1 bg-accent rounded-full mb-20 opacity-75"></div>
+
+        <!-- Bagian 2: TENTANG SAYA & KEHLIAN -->
+        <section id="tentang" class="py-16">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-secondary">Tentang Saya Singkat</h2>
+            
+            <div class="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow-xl border border-gray-100">
+                <p class="text-lg text-gray-700 mb-10 leading-relaxed text-center">
+                    Sejak [Tahun Mulai], saya telah berdedikasi membantu klien mencapai tujuan mereka melalui [Keahlian Utama 1] dan [Keahlian Utama 2]. Saya percaya pada pendekatan yang berpusat pada pengguna, memastikan setiap solusi tidak hanya indah tetapi juga fungsional dan berdampak.
+                </p>
+
+                <!-- Daftar Keahlian -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="p-4 rounded-xl border border-gray-200 bg-gray-50 shadow-sm">
+                        <i data-lucide="layout-grid" class="w-8 h-8 mx-auto text-primary mb-3"></i>
+                        <h3 class="text-xl font-semibold mb-2">Desain Responsif</h3>
+                        <p class="text-sm text-gray-600">Menciptakan antarmuka yang bekerja sempurna di semua perangkat.</p>
+                    </div>
+                    <div class="p-4 rounded-xl border border-gray-200 bg-gray-50 shadow-sm">
+                        <i data-lucide="code" class="w-8 h-8 mx-auto text-primary mb-3"></i>
+                        <h3 class="text-xl font-semibold mb-2">Clean Code</h3>
+                        <p class="text-sm text-gray-600">Mengembangkan solusi yang terstruktur, efisien, dan mudah dipelihara.</p>
+                    </div>
+                    <div class="p-4 rounded-xl border border-gray-200 bg-gray-50 shadow-sm">
+                        <i data-lucide="search-check" class="w-8 h-8 mx-auto text-primary mb-3"></i>
+                        <h3 class="text-xl font-semibold mb-2">Riset Pengguna</h3>
+                        <p class="text-sm text-gray-600">Memastikan produk sesuai dengan kebutuhan dan perilaku audiens target.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian 3: KARYA PILIHAN (Placeholder) -->
+        <section id="karya" class="py-16">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-secondary">Karya Pilihan</h2>
+            <p class="text-center text-lg text-gray-600 mb-10">Berikut adalah beberapa proyek terbaik saya yang menunjukkan kemampuan saya dalam [Bidang Anda].</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Kartu Proyek 1 -->
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/600x400/1E293B/E2E8F0?text=Proyek+1" alt="Thumbnail Proyek 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-secondary mb-2">Aplikasi E-Commerce B2B</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Desain & Pengembangan Frontend. Membangun platform transaksi yang mulus.</p>
+                        <a href="#" class="inline-flex items-center text-primary font-semibold hover:text-indigo-600 transition duration-150">
+                            Lihat Detail Proyek <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Kartu Proyek 2 -->
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/600x400/94A3B8/ffffff?text=Proyek+2" alt="Thumbnail Proyek 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-secondary mb-2">Sistem Dashboard Analitik</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Perancangan UI/UX. Menyederhanakan visualisasi data kompleks.</p>
+                        <a href="#" class="inline-flex items-center text-primary font-semibold hover:text-indigo-600 transition duration-150">
+                            Lihat Detail Proyek <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Kartu Proyek 3 -->
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/600x400/F97316/ffffff?text=Proyek+3" alt="Thumbnail Proyek 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-secondary mb-2">Branding Korporat Baru</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Strategi Visual & Pedoman Merek. Membangun identitas yang kohesif.</p>
+                        <a href="#" class="inline-flex items-center text-primary font-semibold hover:text-indigo-600 transition duration-150">
+                            Lihat Detail Proyek <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#" class="bg-accent text-secondary px-8 py-3 rounded-xl font-bold text-lg shadow-lg hover:bg-yellow-400 transition duration-300 transform hover:scale-[1.02]">
+                    Semua Portofolio
+                </a>
+            </div>
+        </section>
+        
+        <!-- Bagian 4: CALL-TO-ACTION AKHIR & KONTAK -->
+        <section id="kontak" class="py-20 my-10 bg-primary rounded-3xl shadow-2xl text-white text-center">
+            <h2 class="text-3xl sm:text-5xl font-extrabold mb-4 leading-tight">
+                Punya Ide Proyek?
+            </h2>
+            <p class="text-xl font-light mb-8 max-w-2xl mx-auto">
+                Saya selalu terbuka untuk kolaborasi. Mari kita diskusikan bagaimana saya dapat membantu mewujudkan visi Anda.
+            </p>
+            
+            <a href="mailto:emailanda@contoh.com" class="inline-block bg-white text-primary px-10 py-4 rounded-xl font-bold text-xl shadow-2xl hover:bg-gray-200 transition duration-300 transform hover:scale-[1.05]">
+                Kirim Email Saya
+            </a>
+
+            <!-- Tautan Media Sosial / Kontak Cepat -->
+            <div class="mt-8 flex justify-center space-x-6">
+                <a href="https://linkedin.com/in/profilanda" target="_blank" class="text-white hover:text-accent transition duration-150" aria-label="LinkedIn">
+                    <i data-lucide="linkedin" class="w-7 h-7"></i>
+                </a>
+                <a href="https://github.com/profilanda" target="_blank" class="text-white hover:text-accent transition duration-150" aria-label="GitHub">
+                    <i data-lucide="github" class="w-7 h-7"></i>
+                </a>
+                <a href="https://twitter.com/profilanda" target="_blank" class="text-white hover:text-accent transition duration-150" aria-label="Twitter">
+                    <i data-lucide="twitter" class="w-7 h-7"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-8 border-t border-gray-200 text-center text-gray-500 text-sm">
+            <p>&copy; 2024 [Nama Anda]. Dibuat dengan cinta dan kode sederhana. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+    <!-- Skrip untuk menginisialisasi ikon Lucide -->
+    <script>
+        // Mengubah semua elemen <i> dengan atribut data-lucide menjadi SVG ikon
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+        });
+
+        // Implementasi smooth scrolling untuk navigasi internal
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
